@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 06.06.2017 12:47:17 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.rating.domain.Professor" table="PROFESSOR">
+        <id name="iz_kuerzel" type="java.lang.String">
+            <column name="IZ_KUERZEL" />
+            <generator class="assigned" />
+        </id>
+        <property name="vorname" type="java.lang.String">
+            <column name="VORNAME" />
+        </property>
+        <property name="nachname" type="java.lang.String">
+            <column name="NACHNAME" />
+        </property>
+        <property name="email_adresse" type="java.lang.String">
+            <column name="EMAIL_ADRESSE" />
+        </property>
+    </class>
+</hibernate-mapping>

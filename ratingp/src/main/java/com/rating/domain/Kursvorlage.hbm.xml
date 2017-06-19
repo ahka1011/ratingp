@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12.06.2017 15:55:55 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.rating.domain.Kursvorlage" table="KURSVORLAGE">
+        <id name="kurs_nr" type="int">
+            <column name="KURS_NR" />
+            <generator class="assigned" />
+        </id>
+        <property name="bezeichnung_kurs" type="java.lang.String">
+            <column name="BEZEICHNUNG_KURS" />
+        </property>
+        <property name="semester_kurs" type="java.lang.String">
+            <column name="SEMESTER_KURS" />
+        </property>
+        <property name="iz_kuerzel" type="java.lang.String">
+            <column name="IZ_KUERZEL" />
+        </property>
+    </class>
+</hibernate-mapping>

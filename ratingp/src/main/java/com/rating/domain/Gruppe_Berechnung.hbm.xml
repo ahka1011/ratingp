@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 06.06.2017 12:47:17 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.rating.domain.Gruppe_Berechnung" table="GRUPPE_BERECHNUNG">
+        <id name="iz_kuerzel" type="java.lang.String">
+            <column name="IZ_KUERZEL" />
+            <generator class="assigned" />
+        </id>
+        <property name="gruppen_nr" type="int">
+            <column name="GRUPPEN_NR" />
+        </property>
+        <property name="kurs_nr" type="int">
+            <column name="KURS_NR" />
+        </property>
+        <property name="gruppen_note" type="double">
+            <column name="GRUPPEN_NOTE" />
+        </property>
+    </class>
+</hibernate-mapping>

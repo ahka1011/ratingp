@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 06.06.2017 12:47:17 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.rating.domain.Belegung_Einzeln" table="BELEGUNG_EINZELN">
+        <id name="iz_kuerzel" type="java.lang.String">
+            <column name="IZ_KUERZEL" />
+            <generator class="assigned" />
+        </id>
+        <property name="matrk_num" type="int">
+            <column name="MATRK_NUM" />
+        </property>
+        <property name="bezeichnung_kurs" type="java.lang.String">
+            <column name="BEZEICHNUNG_KURS" />
+        </property>
+        <property name="semester_kurs" type="java.lang.String">
+            <column name="SEMESTER_KURS" />
+        </property>
+        <property name="einzeln_kriterium" type="java.lang.String">
+            <column name="EINZELN_KRITERIUM" />
+        </property>
+        <property name="einzeln_note" type="double">
+            <column name="EINZELN_NOTE" />
+        </property>
+    </class>
+</hibernate-mapping>
