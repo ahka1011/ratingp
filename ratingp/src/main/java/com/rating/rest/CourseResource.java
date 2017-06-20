@@ -155,7 +155,7 @@ public class CourseResource extends BaseResource {
 				return c; 
 			}
 		} catch (Exception e) {
-			//ToDo hier müsst ihr festlegen was passiert wenn das Token nicht valide ist.  
+			//Hier einbauen, dass Token nicht valide ist  
 			e.printStackTrace();
 		}
 		return c;
